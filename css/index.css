@@ -1,0 +1,68 @@
+/*Google fonts link for poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.hero{
+    background-image: url(../images/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+
+} 
+.shopname{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-right: 4%;
+}  
+
+.shopname1{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-right: 4%;
+}  
+
+.fa-pizza-slice{
+    animation:  icon 5s ease infinite;
+}
+@keyframes icon {
+    25%{
+        transform: translateY(-1.5rem);
+    }
+    50%{
+        transform: translateY(-1.5rem);
+    }
+    
+}
+.motto{
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    margin-left: 58%;
+    margin-bottom: 4%;
+
+    
+
+}
+.order{
+    margin-left: 73%;
+    width: 20%;
+    height: 60px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: wheat;
+
+    font-weight: bold;
+}
