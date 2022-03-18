@@ -8,11 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
  
-.hero{
-    background-image: url(../images/background4.jpg);
+.intro{
+    background-image: url(../images/screenback.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+   
     position: relative;
     background-position: center;
 
@@ -64,5 +64,16 @@
     border: 2px solid white;
     color: wheat;
 
-    font-weight: bold;
+    font-weight: bold;    
 }
+/*Adding hover effect to orderbutton*/
+.order:hover{
+    color: #001F3F;
+    background-color: #fff;
+    letter-spacing: 4px;
+}
+
+.wrapper{
+   display: none;
+}
+
