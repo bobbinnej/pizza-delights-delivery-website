@@ -116,3 +116,21 @@ body{
     height: 200px;
 }
 
+h5{
+    color: palevioletred;
+    cursor: pointer; 
+
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color: wheat;
+}
