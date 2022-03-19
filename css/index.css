@@ -169,4 +169,10 @@ input::placeholder {
     background-color: black;
     color: yellow;
 }
+
+.back-to-top {
+    position: fixed;
+   
+    bottom: 2rem;
+
     
