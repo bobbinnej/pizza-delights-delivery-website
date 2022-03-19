@@ -73,7 +73,36 @@
     letter-spacing: 4px;
 }
 
-.wrapper{
-   display: none;
+.welcome{
+    margin-top: 2%;
+    margin-left: 15%;
+    text-align: center;
+    color: wheat;
+}
+
+
+body{
+    background-color: white;
+}
+
+.navbar .navbar-brand{
+    color: white;
+    font-size: 30px;
+}
+.nav-link{
+    color: white;
+}
+.start-order{
+   width: 107%;
+   height: 40px;
+   border-radius: 20px;
+   border: 2px solid white;
+   background-color: wheat;
+   color: black;
+
+}
+.start-order:hover{
+    color: yellow;
+    background-color: black;
 }
 
