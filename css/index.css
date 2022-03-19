@@ -139,9 +139,34 @@ a:active{
     margin-top: 4%;
 
 }
-.vertical-line{
-    border-left: 2px solid black;
-    height: 125px;
-    display: inline-block;
-    margin: 0px 10px;
+/*feedback form*/
+.form-control{
+    background-color: transparent;
+    border-radius: 12px;
+    border:2px solid palevioletred
 }
+#email{
+    margin-top: 4%;
+}
+input::placeholder {
+    color: black !important;
+    opacity: 1;
+}
+.form-control::placeholder{
+    color: black;
+}
+.submit{
+    margin-top: 3%;
+    margin-left: 40% ;
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid palevioletred;
+    background-color: transparent;
+    color: black;
+}
+.submit:hover{
+    background-color: black;
+    color: yellow;
+}
+    
