@@ -134,3 +134,14 @@ a:visited{
 a:active{
     color: wheat;
 }
+
+#delivery{
+    margin-top: 4%;
+
+}
+.vertical-line{
+    border-left: 2px solid black;
+    height: 125px;
+    display: inline-block;
+    margin: 0px 10px;
+}
