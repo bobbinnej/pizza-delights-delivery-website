@@ -77,8 +77,10 @@
     margin-top: 2%;
     margin-left: 15%;
     text-align: center;
-    color: wheat;
+    color:black;
 }
+
+
 
 
 body{
@@ -104,5 +106,13 @@ body{
 .start-order:hover{
     color: yellow;
     background-color: black;
+}
+
+#category{
+   
+    margin-top: 5%;
+}
+.cat-img{
+    height: 200px;
 }
 
