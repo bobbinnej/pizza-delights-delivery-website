@@ -171,3 +171,17 @@ input::placeholder {
     color: yellow;
 }
 
+#submit-order{
+    margin-left: 40%;
+    margin-top: 2%;
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    background-color:black;
+    border: 2px solid palevioletred;
+    color: white;
+}
+#submit-order:hover{
+    background-color: transparent;
+    color: black;
+}

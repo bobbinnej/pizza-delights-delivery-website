@@ -64,13 +64,21 @@
                    
                   </select>
                   <br><br>
-                  <label for="pizza-size">Choose Delivery option </label>
-                  <select class="form-control" id="pizza-crust">
-                    <option>I want my pizza to be delivered</option>
-                    <option>I do not want my pizza to be deliverd</option>
-                    
-                   
+                  <span>Do you want your pizza to be Delivered?</span>  
+                  <select class="form-control" id="pizza-delivery">
+                    <option >Select</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>                 
                   </select>
+                  <!--Avtivate a textbox for delivery address if delivery option is yes-->
+                  <hr style="border: 2px solid black;">
+                  <div id="opt-delivery" style="display: none;">
+                    <p style="color: black;"> Delivery Fee is Kes &nbsp; <span style="color: palevioletred;">60</span></p>
+                    Input Delivery Address:                
+                    <input type="text" id="delivery-address">
+                    
+                  </div>
+                  <button id="submit-order">Checkout</button>
                 </div>
                
                 
