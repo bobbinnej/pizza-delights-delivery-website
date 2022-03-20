@@ -106,6 +106,7 @@ body{
 .start-order:hover{
     color: yellow;
     background-color: black;
+    text-decoration: none;
 }
 
 #category{
@@ -170,9 +171,3 @@ input::placeholder {
     color: yellow;
 }
 
-.back-to-top {
-    position: fixed;
-   
-    bottom: 2rem;
-
-    
