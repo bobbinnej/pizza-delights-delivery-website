@@ -19,6 +19,7 @@
      $("#pizza-delivery").change(function(){
          if($(this).val()=="Y"){
             $("#opt-delivery").show();
+            
          }else{
             $("#opt-delivery").hide();
 
@@ -28,5 +29,25 @@
 
  });
 
+ function okBtn(){
+     let delivery=document.getElementById("delivery-address").value;
+
+     if(delivery !="Y"){
+         alert(`Your order will be delivered to the address ${delivery} at a Kes 60 Delivery Fee` )
+     }else{
+         alert("Delivery address must be filled");
+     }
+ }
+
+ /*Gathering user input*/
+ $(document).ready(function(){
+     $("form#pizza-form").submit(function(e){
+         e.preventDefault()
+         let pizzaNumber=$("input#number-of-pizzas").val()
+         console.log(pizzaNumber)
+
+     });
+
+ });
 
  

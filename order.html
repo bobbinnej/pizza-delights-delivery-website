@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+   <!--Add an image to title section-->
+  <link rel="icon" href="images/icons8-pizza-48.png" sizes="48x48">
+  <title>&nbsp;Make Order</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,8 +27,8 @@
             <img src="images/pizzalogo.png" alt="" srcset="">
           </div>
           <div class="col">
-            <form>
-              <form>
+          
+              <form id="pizza-form">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Number of Pizzas</label>
                   <input type="number" class="form-control" id="number-of-pizzas" placeholder="Input number of pizza you want"><br>
@@ -76,14 +78,14 @@
                     <p style="color: black;"> Delivery Fee is Kes &nbsp; <span style="color: palevioletred;">60</span></p>
                     Input Delivery Address:                
                     <input type="text" id="delivery-address">
+                    <button id="ok" onclick="okBtn()">OK</button>
                     
                   </div>
-                  <button id="submit-order">Checkout</button>
+                  <button id="submit-order" onclick="btnOrder()">Checkout</button>
                 </div>
                
                 
-              </form>
-            </form>
+              </form>       
           </div>
         </div>
     </div>
