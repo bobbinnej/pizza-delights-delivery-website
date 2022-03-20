@@ -50,4 +50,6 @@ constructor
 size
 crust
 toppings
+
+number of pizzas
 delivery fee
