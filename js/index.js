@@ -51,7 +51,7 @@
          let pizzaAddress=$("#delivery-address").val()
          
          const pizza1= new Pizza(pizzaNumber,pizzaSize,pizzaCrust,pizzaTopping,pizzaDelivery,pizzaAddress)
-         alert(pizza1)
+         console.log(pizza1)
          pizza1.calculatePrice()
          
 
@@ -65,6 +65,7 @@
          this.pizzaTopping=pizzaTopping;
          this.pizzaDelivery=pizzaDelivery;
          this.pizzaAddress=pizzaAddress;
+         
 
      }
      /**Pizza prototype */
@@ -72,9 +73,9 @@
          console.log("total calculated")
          let numberPrice;
          let deliveryPrice=60;
-         let sizePrice;  
+        
          
-
+         let sizePrice;  
           if(this.pizzaSize==="Mega (1200)"){
               sizePrice=1200
 
@@ -93,7 +94,7 @@
          }else if(this.pizzaCrust==="Stuffed (150)"){
              crustPrice=150
          }
-         else if(this.pizzacrust==="Thick (100)"){
+         else if(this.pizzaCrust==="Thick (100)"){
             crustPrice=100
             
          }else{
@@ -146,13 +147,25 @@
 
          
 
-         /*Total */
-        let totalPizzaPrice=sizePrice+crustPrice+toppingPrice+deliveryPrice
-        alert(totalPizzaPrice)
+          /*Total */
+         let totalPizzaPrice=(sizePrice+crustPrice+toppingPrice+deliveryPrice)*this.pizzaNumber;
+        alert(`      Summary   
+        Number of Pizzas Ordered: ${this.pizzaNumber}
+        Cost for Pizza size:      ${sizePrice}
+        Cost for Pizza crust:     ${crustPrice}
+        Cost for Pizza topping:   ${toppingPrice}
+        Cost for Pizza delivery:  ${deliveryPrice} 
+
+        Total cost                ${totalPizzaPrice}
+        Delivery address: ${this.pizzaAddress}
+                    
         
+        `)
+
 
         
      }
+   
 
  });
 
