@@ -48,10 +48,10 @@
          let pizzaCrust=$("#pizza-crust").find(":selected").text();
          let pizzaTopping=$("#pizza-topping").find(":selected").text();
          let pizzaDelivery=$("#pizza-delivery").find(":selected").text();
-         let pizzaAddress=$("#delivery-address").find(":selected").text();
+         let pizzaAddress=$("#delivery-address").val()
          
          const pizza1= new Pizza(pizzaNumber,pizzaSize,pizzaCrust,pizzaTopping,pizzaDelivery,pizzaAddress)
-         console.log(pizza1)
+         alert(pizza1)
          pizza1.calculatePrice()
          
 
@@ -73,6 +73,7 @@
          let numberPrice;
          let deliveryPrice=60;
          let sizePrice;  
+         
 
           if(this.pizzaSize==="Mega (1200)"){
               sizePrice=1200
@@ -134,11 +135,20 @@
              toppingPrice=30
          }
 
+         let pizzaDelivery=$("#delivery-address").val() 
+      if(this.pizzaDelivery=="Yes"){
+          deliveryPrice=60
+          alert(`Your order will be delivered to the address ${pizzaDelivery} at a Kes 60 Delivery Fee` )
+     }else{
+          deliveryPrice=0
+     }
+     
+
          
 
          /*Total */
-        let totalPizzaPrice=sizePrice+crustPrice+toppingPrice
-        console.log(totalPizzaPrice)
+        let totalPizzaPrice=sizePrice+crustPrice+toppingPrice+deliveryPrice
+        alert(totalPizzaPrice)
         
 
         

@@ -7,6 +7,25 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*media queries*/
+
+@media only screen and (min-width: 600px) {
+    .container-fluid {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container-fluid {
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (min-width: 990px) {
+    .container-fluid {
+      width: 65%;
+    }
+  }
  
 .intro{
     background-image: url(../images/screenback.png);
